@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.holy-grid{
+			display:flex;
+			flex-direction:column;
+			min-height:100vh;
+		}
+		header,footer{
+			text-align:center;
+			flex:0 0 100px;
+			background:pink;
+		}
+		.holy-grid-content{
+			display:flex;
+			flex:1;
+		}
+		.holy-grid-content-items{
+			flex:1;
+		}
+		.holy-grid-content-left{
+			flex:0 0 150px;
+			background-color:red;
+		}
+		.holy-grid-content-right{
+			flex:0 0 150px;
+			background-color:blue;
+		}
+
+	</style>
+</head>
+<body class="holy-grid">
+	<header class="holy-grid-items">#header</header>
+	<div class="holy-grid-content holy-grid-items">
+		<div class="holy-grid-content-items holy-grid-content-left">
+			#left
+		</div>
+		<div class="holy-grid-content-items holy-grid-content-center">
+			#center
+		</div>
+		<div class="holy-grid-content-items holy-grid-content-right">
+			#right
+		</div>
+	</div>
+	<footer class="holy-grid-items">#footer</footer>	
+</body>
+</html>
